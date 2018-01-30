@@ -5,17 +5,19 @@
   
 
   
-  <title>Xfae&#39;s Blog</title>
+  <title>Linux使用--Hexo | Xfae&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Blog from Xfce">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Xfae&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="概述Hexo是一个基于Nodejs的博客框架，借助它可以很方便的建立个人博客以及部署博客到GitHub上面，本文主要介绍Hexo的搭建 环境操作系统： Debian 9.0 x64 运行环境： Nodejs v8.9.4  大纲1. GitHub新建仓库及安装Git2. 配置GitHub的SSH密钥3. 编译及安装Nodejs4. 安装及测试Hexo5. 配置Hexo为Git部署方式6. 申请及绑">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux使用--Hexo">
+<meta property="og:url" content="http://yoursite.com/2018/01/30/hexo_blog/index.html">
 <meta property="og:site_name" content="Xfae&#39;s Blog">
-<meta property="og:description" content="Blog from Xfce">
+<meta property="og:description" content="概述Hexo是一个基于Nodejs的博客框架，借助它可以很方便的建立个人博客以及部署博客到GitHub上面，本文主要介绍Hexo的搭建 环境操作系统： Debian 9.0 x64 运行环境： Nodejs v8.9.4  大纲1. GitHub新建仓库及安装Git2. 配置GitHub的SSH密钥3. 编译及安装Nodejs4. 安装及测试Hexo5. 配置Hexo为Git部署方式6. 申请及绑">
+<meta property="og:updated_time" content="2018-01-30T16:32:33.491Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xfae&#39;s Blog">
-<meta name="twitter:description" content="Blog from Xfce">
+<meta name="twitter:title" content="Linux使用--Hexo">
+<meta name="twitter:description" content="概述Hexo是一个基于Nodejs的博客框架，借助它可以很方便的建立个人博客以及部署博客到GitHub上面，本文主要介绍Hexo的搭建 环境操作系统： Debian 9.0 x64 运行环境： Nodejs v8.9.4  大纲1. GitHub新建仓库及安装Git2. 配置GitHub的SSH密钥3. 编译及安装Nodejs4. 安装及测试Hexo5. 配置Hexo为Git部署方式6. 申请及绑">
   
     <link rel="alternate" href="/atom.xml" title="Xfae&#39;s Blog" type="application/atom+xml">
   
@@ -62,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hexo_blog" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-hexo_blog" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/01/30/hexo_blog/" class="article-date">
   <time datetime="2018-01-30T04:48:44.000Z" itemprop="datePublished">2018-01-30</time>
@@ -77,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/30/hexo_blog/">Linux使用--Hexo</a>
+    <h1 class="article-title" itemprop="name">
+      Linux使用--Hexo
     </h1>
   
 
@@ -140,152 +140,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-markdown" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/29/markdown/" class="article-date">
-  <time datetime="2018-01-29T14:32:49.000Z" itemprop="datePublished">2018-01-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/29/markdown/">Linux使用--Markdown</a>
-    </h1>
+    <a href="/2018/01/29/markdown/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">Linux使用--Markdown</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Hexo里写博客基于Markdown文件，故掌握Markdown的使用是基础，Github上也是如此，本文主要介绍Markdown的基本语法</p>
-<h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>操作系统：<strong> Debian 9.0 x64 </strong><br>文本编辑器：<strong> ReText </strong></p>
-<h2 id="大纲"><a href="#大纲" class="headerlink" title="大纲"></a>大纲</h2><p><a href="#t1">1. 安装ReText</a><br><a href="#t2">2. Markdown与HTML关系</a><br><a href="#t3">3. Markdown语法-特殊符号</a><br><a href="#t4">4. Markdown语法-段落和换行</a><br><a href="#t5">5. Markdown语法-标题</a><br><a href="#t6">6. Markdown语法-引用</a><br><a href="#t7">7. Markdown语法-列表</a><br><a href="#t8">8. Markdown语法-分隔线</a><br><a href="#t9">9. Markdown语法-代码框</a><br><a href="#t10">10. Markdown语法-链接</a><br><a href="#t11">11. Markdown语法-图片</a><br><a href="#t12">12. Markdown语法-表格</a><br><a href="#t13">13. Markdown语法-锚点</a></p>
-<h2 id="详细"><a href="#详细" class="headerlink" title="详细"></a>详细</h2><h3 id="1-安装ReText"><a href="#1-安装ReText" class="headerlink" title="1.安装ReText"></a><span id="t1">1.安装ReText</span></h3><p>按快捷键 <strong> Alt+F2 </strong> ，输入<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gnome-terminal</span><br></pre></td></tr></table></figure></p>
-<p>进入Bash界面执行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install retext</span><br></pre></td></tr></table></figure></p>
-<h3 id="2-Markdown与HTML关系"><a href="#2-Markdown与HTML关系" class="headerlink" title="2. Markdown与HTML关系"></a><span id="t2">2. Markdown与HTML关系</span></h3><p>Markdown属于HTML的子集，Markdown语法兼容HTML标签，可以在Markdown中混写；<br>某些HTML区块元素如&lt;div&gt;/&lt;table&gt;/&lt;pre&gt;/&lt;p&gt;等，需要在前后加上空行与其它内容隔开；<br>在HTML中的Markdown样式无效，语法有效；</p>
-<h3 id="3-Markdown语法-特殊符号"><a href="#3-Markdown语法-特殊符号" class="headerlink" title="3. Markdown语法-特殊符号"></a><span id="t3">3. Markdown语法-特殊符号</span></h3><p>Markdown会对’&lt;’与’&amp;’自动处理；特殊符号HTML实体如下：<br>    &emsp;&emsp;’&lt;’: &lt;lt;<br>    &emsp;&emsp;’&amp;’: &amp;amp;<br>    &emsp;&emsp;’&copy;’: &amp;copy;<br>    &emsp;&emsp;’&ensp;’: &amp;ensp;<br>    &emsp;&emsp;’&emsp;’: &amp;emsp;<br>另外，在code范围内的’&lt;’与’&amp;’一定会被替换为HTML实体；</p>
-<h3 id="4-Markdown语法-段落和换行"><a href="#4-Markdown语法-段落和换行" class="headerlink" title="4. Markdown语法-段落和换行"></a><span id="t4">4. Markdown语法-段落和换行</span></h3><p>段落，由一个或多个连续的文本行组成，在前后要有一个以上空行；换行，段落内插入换行符；</p>
-<h3 id="5-Markdown语法-标题"><a href="#5-Markdown语法-标题" class="headerlink" title="5. Markdown语法-标题"></a><span id="t5">5. Markdown语法-标题</span></h3><p>Markdown支持两种标题语法，类Setext和类Atx形式：<br>    &emsp;&emsp;Setext：使用等号或减号表示<br>    &emsp;&emsp;Atx：使用#号个数表示</p>
-<h3 id="6-Markdown语法-引用"><a href="#6-Markdown语法-引用" class="headerlink" title="6. Markdown语法-引用"></a><span id="t6">6. Markdown语法-引用</span></h3><p>在行或者段落前面添加’&gt;’符号，效果如下：</p>
-<blockquote>
-<p>这是一个引用</p>
-</blockquote>
-<h3 id="7-Markdown语法-列表"><a href="#7-Markdown语法-列表" class="headerlink" title="7. Markdown语法-列表"></a><span id="t7">7. Markdown语法-列表</span></h3><p>Markdown支持有序列表和无序列表；<br>    &emsp;&emsp;无序列表：使用’*’/‘+’/‘-‘开头<br>    &emsp;&emsp;有序列表：使用数字加一个英文点开头</p>
-<h3 id="8-Markdown语法-分隔线"><a href="#8-Markdown语法-分隔线" class="headerlink" title="8. Markdown语法-分隔线"></a><span id="t8">8. Markdown语法-分隔线</span></h3><p>在一个行中包含3个以上的’*’/‘-‘/‘_’，并且不包含其他内容，效果如下：</p>
-<hr>
-<h3 id="9-Markdown语法-代码框"><a href="#9-Markdown语法-代码框" class="headerlink" title="9. Markdown语法-代码框"></a><span id="t9">9. Markdown语法-代码框</span></h3><p>单行代码框使用’`‘将代码包裹起来，效果如下：</p>
-<p><code>#include &lt;stdio.h&gt;
-int main(){
-    return 0;
-}</code></p>
-<p>多行代码框使用’```‘将代码包裹起来，效果如下：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="10-Markdown语法-链接"><a href="#10-Markdown语法-链接" class="headerlink" title="10. Markdown语法-链接"></a><span id="t10">10. Markdown语法-链接</span></h3><p>将显示内容放入’[]’里，在后面跟上’()’，里面填入地址，如：<br>[Baidu](<a href="http://baidu.com" target="_blank" rel="noopener">http://baidu.com</a>)<br>效果如下：</p>
-<p><a href="http://baidu.com" target="_blank" rel="noopener">Baidu</a></p>
-<h3 id="11-Markdown语法-图片"><a href="#11-Markdown语法-图片" class="headerlink" title="11. Markdown语法-图片"></a><span id="t11">11. Markdown语法-图片</span></h3><p>与链接类似，在链接前加入’!’即可：<br>![image1](<a href="https://www.debian.org/Pics/openlogo-50.png" target="_blank" rel="noopener">https://www.debian.org/Pics/openlogo-50.png</a>)</p>
-<p>效果如下：</p>
-<p><img src="https://www.debian.org/Pics/openlogo-50.png" alt="image1"></p>
-<h3 id="12-Markdown语法-表格"><a href="#12-Markdown语法-表格" class="headerlink" title="12. Markdown语法-表格"></a><span id="t12">12. Markdown语法-表格</span></h3><p>表格中每一行度元素直接使用’|’隔开，如果该行为属性行则需要在下一行添加’|:—|:—:|—:|’结构，如：</p>
-<p>| Table | Are | Cool |<br>| :—: | :– | —: |<br>| 1 | 2 | 3 |<br>| 4 | 5 | 6 |</p>
-<p>效果如下：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">Table</th>
-<th style="text-align:left">Are</th>
-<th style="text-align:right">Cool</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">1</td>
-<td style="text-align:left">2</td>
-<td style="text-align:right">3</td>
-</tr>
-<tr>
-<td style="text-align:center">4</td>
-<td style="text-align:left">5</td>
-<td style="text-align:right">6</td>
-</tr>
-</tbody>
-</table>
-<h3 id="13-Markdown语法-锚点"><a href="#13-Markdown语法-锚点" class="headerlink" title="13. Markdown语法-锚点"></a><span id="t13">13. Markdown语法-锚点</span></h3><p>目录中经常需要使用锚点跳转，锚点与链接语法一致，不同在与后面的’()’里输入页面元素的id，故需要与带id属性的HTML元素结合使用，如：</p>
-<p>[这是一个锚点](#id_number)<br>&lt;span id=’id_number’&gt;~这里是内容(跳到这里)~&lt;/span&gt;</p>
-<p>效果如下：</p>
-<p><a href="#id_number">这是一个锚点</a></p>
-<p><span id="id_number">~这里是内容(跳到这里)~</span></p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>[1]. <a href="https://sspai.com/post/25137" target="_blank" rel="noopener">认识与入门Markdown</a><br>[2]. <a href="http://www.markdown.cn" target="_blank" rel="noopener">Markdown语法说明</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/29/markdown/" data-id="cjd1v8fic00028jowq3536rdy" class="article-share-link">Teilen</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/01/29/hello-world/" class="article-date">
-  <time datetime="2018-01-28T16:39:09.643Z" itemprop="datePublished">2018-01-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/01/29/hello-world/" data-id="cjd1v8fhy00008jowfmhjo1mm" class="article-share-link">Teilen</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
